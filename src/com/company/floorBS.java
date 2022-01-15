@@ -3,25 +3,25 @@ package com.company;
 public class floorBS {
     public static void main(String[] args) {
         int list[]={1,2,4,6,7,9};
-        int target =6;
+        int target =5;
 
-        int ans = findCeilling(list,target);
-        System.out.println(ans);x
+        int ans = floor(list,target);
+        System.out.println(ans);
     }
 
-    static int findCeilling(int[] arr, int target){
+    static int floor(int[] arr, int target){
         int start = 0;
         int end =arr.length-1;
         int mid = 0;
         boolean isAsc= arr[start]<arr[end];
         if (isAsc){
-            if (arr[arr.length-1]<target)
+            if (arr[0]>target)
             {
                 return -1;
             }
         }
         else{
-            if(arr[0]<target)
+            if(arr[arr.length-1]>target)
                 return -1;
         }
 
@@ -48,6 +48,6 @@ public class floorBS {
                 }
             }
         }
-        return start;
+        return end;
     }
 }
