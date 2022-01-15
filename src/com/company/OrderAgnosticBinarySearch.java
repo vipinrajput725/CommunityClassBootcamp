@@ -16,7 +16,7 @@ public class OrderAgnosticBinarySearch {
         //find whether the array is in ascending or descending
         boolean isASC = arr[start]<arr[end];
         //below logic is for sorting it will increase the time complexity in case of descending order of list and alter
-        // alter the indexes of the elements.
+        // Alter the indexes of the elements.
 //        if(!isASC){
 //            int i =0;
 //            while(i<arr.length/2){
