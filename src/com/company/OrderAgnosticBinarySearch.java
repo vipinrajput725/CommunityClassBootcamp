@@ -1,5 +1,5 @@
 package com.company;
-
+//Hello there Agnostic Binary search is here...........
 public class OrderAgnosticBinarySearch {
     public static void main(String[] args) {
         int[] elementList= {20,18,15,14,12,10,6,3,2};
@@ -13,7 +13,7 @@ public class OrderAgnosticBinarySearch {
         int start = 0;
         int end = arr.length-1;
 
-        //find whether the array is in ascending or descending
+        //find whether the array is in ascending or descending.
         boolean isASC = arr[start]<arr[end];
         //below logic is for sorting it will increase the time complexity in case of descending order of list and alter
         // Alter the indexes of the elements.
