@@ -12,13 +12,7 @@ class GFG {
         int T = in.nextInt();
 
         while (T-- > 0) {
-            //String Str = in.();
-           // int[] Str2 = Arrays.toString(Str);
-//            String arr = in.nextLine();
-//            int x = 54;
-//            int ans = count(arr, x);
-
-//            System.out.print(ans);
+            //pass
         }
     }
 }
