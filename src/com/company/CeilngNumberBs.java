@@ -9,30 +9,30 @@ public class CeilngNumberBs {
         System.out.println(ans);
     }
 
-    static int findCeilling(int[] arr, int target){
+    static int findCeilling(int[] letters, int target){
         int start = 0;
-        int end =arr.length-1;
+        int end =letters.length-1;
         int mid = 0;
-        boolean isAsc= arr[start]<arr[end];
+        boolean isAsc= letters[start]<letters[end];
         if (isAsc){
-            if (arr[arr.length-1]<target)
+            if (letters[letters.length-1]<target)
             {
                 return -1;
             }
         }
         else{
-            if(arr[0]<target)
+            if(letters[0]<target)
                 return -1;
         }
 
         while(start<=end){
             mid = start + (end-start)/2;
 
-            if(arr[mid]==target){
+            if(letters[mid]==target){
                 return mid;
             }
             if(isAsc){
-                if(arr[mid]<target){
+                if(letters[mid]<target){
                     start= mid +1;
                 }
                 else {
@@ -40,7 +40,7 @@ public class CeilngNumberBs {
                 }
             }
             else{
-                if(arr[mid]>target){
+                if(letters[mid]>target){
                     start= mid +1;
                 }
                 else {
